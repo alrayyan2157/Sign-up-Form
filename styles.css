@@ -1,0 +1,21 @@
+@font-face {
+    font-family: troika;
+    src: url(./troika/troika.otf);
+}
+
+.title{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    opacity: 0.8;
+    color: white;
+    font-family: troika, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+img{
+    height:100vh;
+}
