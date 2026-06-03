@@ -19,3 +19,18 @@
 img{
     height:100vh;
 }
+
+.credit{
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    top: 90%;
+    font-size: 15px;
+    color: white;
+    font-family: troika, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.credit a{
+    color: white;
+    text-decoration: none;
+}
