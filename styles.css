@@ -1,36 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: Pangolin;
     src: url(./Pangolin/Pangolin-Regular.ttf);
 }
 
-.title{
-    position:absolute;
-    top: 50%;
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    font-family: Pangolin, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image {
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 40%; 
     width: 100%;
     text-align: center;
     font-size: 50px;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    font-family: Pangolin, Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-img{
-    height:100vh;
-}
-
-.credit{
-    position:absolute;
+.credit {
+    position: absolute;
     text-align: center;
     width: 100%;
-    top: 90%;
+    bottom: 20px;
     font-size: 15px;
     color: white;
-    font-family: Pangolin, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.credit a{
+.credit a {
     color: white;
     text-decoration: none;
+}
+
+.form {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    padding: 60px;
+    background-color: white;
+}
+
+.form fieldset {
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    min-width: 0;
+    border-radius: 10px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro legend {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;      
+    flex-wrap: wrap;          
+    gap: 20px 4%;             
+    margin-bottom: 40px;
+    background-color: #e0dfdf;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;  
+    gap: 5px;
+    width: 48%; 
+}
+
+.input-group label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%
+}
+
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signin button {
+    width: fit-content;
+    padding: 12px 40px;
+    background-color: #596b57;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signin a {
+    color: #596b57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+input:user-invalid {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.02);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #596b57;
+    box-shadow: 0 0 0 3px rgba(89, 107, 87, 0.15);
 }
