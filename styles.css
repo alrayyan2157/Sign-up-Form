@@ -1,6 +1,6 @@
 @font-face {
-    font-family: troika;
-    src: url(./troika/troika.otf);
+    font-family: Pangolin;
+    src: url(./Pangolin/Pangolin-Regular.ttf);
 }
 
 .title{
@@ -11,7 +11,7 @@
     font-size: 50px;
     opacity: 0.8;
     color: white;
-    font-family: troika, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Pangolin, Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
     padding: 20px;
 }
@@ -27,7 +27,7 @@ img{
     top: 90%;
     font-size: 15px;
     color: white;
-    font-family: troika, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Pangolin, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .credit a{
